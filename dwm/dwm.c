@@ -1806,7 +1806,7 @@ setup(void)
 	if (!drw_fontset_create(drw, fonts, LENGTH(fonts)))
 		die("no fonts could be loaded.");
 	lrpad = drw->fonts->h;
-	bh = drw->fonts->h + 2;
+	bh = drw->fonts->h + 6;
 	updategeom();
 	/* init atoms */
 	utf8string = XInternAtom(dpy, "UTF8_STRING", False);
@@ -2305,8 +2305,11 @@ updatesystrayicongeom(Client *i, int w, int h)
 			else
 				i->w = (int) ((float)bh * ((float)i->w / (float)i->h));
 			i->h = bh;
+				}
 		}
-	}
+	/* dynamic tray icon sizing is bypassed here and set to a static value */
+	i->h = 16;
+	i->w = 16;
 }
 
 void
