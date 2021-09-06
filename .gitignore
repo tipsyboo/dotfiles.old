@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Except these:
+!alacritty/
+!dmenu/
+!dwm/
+!dwmblocks/
+!picom/
+!st/
+!.gitignore
