@@ -2308,8 +2308,8 @@ updatesystrayicongeom(Client *i, int w, int h)
 				}
 		}
 	/* dynamic tray icon sizing is bypassed here and set to a static value */
-	i->h = 16;
-	i->w = 16;
+	i->h = 22;
+	i->w = 22;
 }
 
 void
