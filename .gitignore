@@ -5,6 +5,7 @@
 !alacritty/
 !dmenu/
 !dwm/
+!dwm/*
 !dwmblocks/
 !picom/
 !st/
