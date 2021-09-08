@@ -1889,7 +1889,8 @@ setup(void)
 	xatom[XembedInfo] = XInternAtom(dpy, "_XEMBED_INFO", False);
 	/* init cursors */
 	cursor[CurNormal] = drw_cur_create(drw, XC_left_ptr);
-	cursor[CurHand] = drw_cur_create(drw, XC_hand2);
+	cursor[CurHand] = drw_cur_create(drw, XC_left_ptr);
+	/* cursor[CurHand] = drw_cur_create(drw, XC_hand2); */
 	cursor[CurResize] = drw_cur_create(drw, XC_sizing);
 	cursor[CurMove] = drw_cur_create(drw, XC_fleur);
 	/* init appearance */

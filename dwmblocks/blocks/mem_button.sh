@@ -14,6 +14,6 @@
 #    printf "$ICONc%s°C" "$temp"
 #fi
 
-printf "  %s" "$(sensors | grep CPU: | tr -d '(),CPU:' | tr -d '(), ' | tr -d '(),+' | echo $(sed s/...$//)°)"
+alacritty -e 'htop'
 
 
